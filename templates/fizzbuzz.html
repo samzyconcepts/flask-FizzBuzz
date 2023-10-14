@@ -6,10 +6,20 @@
         <title>FizzBuzz</title>
     </head>
     <body>
-        {% for number in numbers %}
         <ul>
-            <li>{% if (number % 15 == 0) %} FizzBuzz {% else %} {{number}} {% endif %}</li>
+        {% for number in numbers %}
+            <li>
+                {% if (number % 15 == 0) %} 
+                FizzBuzz 
+                {% elif number % 3 ==0 %}
+                Fizz
+                {% elif number % 5==0 %}
+                Buzz
+                {% else %} 
+                {{number}} 
+                {% endif %}
+            </li>
+            {% endfor %}
         </ul>
-        {% endfor %}
     </body>
 </html>
