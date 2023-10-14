@@ -7,18 +7,18 @@
     </head>
     <body>
         <ul>
-        {% for number in numbers %}
-            <li>
-                {% if (number % 15 == 0) %} 
-                FizzBuzz 
-                {% elif number % 3 ==0 %}
-                Fizz
-                {% elif number % 5==0 %}
-                Buzz
-                {% else %} 
-                {{number}} 
-                {% endif %}
-            </li>
+            {% for number in numbers %}
+                <li>
+                    {% if (number % 15 == 0) %}
+                        FizzBuzz
+                    {% elif number % 3 ==0 %}
+                        Fizz
+                    {% elif number % 5==0 %}
+                        Buzz
+                    {% else %}
+                        {{ number }}
+                    {% endif %}
+                </li>
             {% endfor %}
         </ul>
     </body>
