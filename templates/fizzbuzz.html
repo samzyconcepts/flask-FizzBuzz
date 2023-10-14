@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FizzBuzz</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FizzBuzz</title>
+    </head>
+    <body>
+        {% for number in numbers %}
+        <ul>
+            <li>{% if (number % 15 == 0) %} FizzBuzz {% else %} {{number}} {% endif %}</li>
+        </ul>
+        {% endfor %}
+    </body>
 </html>
